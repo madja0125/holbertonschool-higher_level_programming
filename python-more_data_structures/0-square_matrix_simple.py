@@ -1,21 +1,8 @@
-#!/bin/usr/python3
-
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
+    new_matrix = matrix.copy()
 
-    if matrix is None:
-        return
+    for i in range(len(matrix)):
+        new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
 
-    if len(matrix) == 0:
-        return
-
-    new_matrix = []
-
-    for i in matrix:
-        list = []
-
-        for dgt in i:
-            list.append(dgt ** 2)
-
-        new_matrix.append(list)
-
-    return new_matrix
+    return (new_matrix)
