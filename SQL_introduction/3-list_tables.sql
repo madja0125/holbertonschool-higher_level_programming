@@ -1,3 +1,3 @@
--- Deleting a databases
+-- LISTING ALL TABLES
 
-DROP DATABASE IF EXISTS htbn_0c_0;
+SHOW TABLES;
